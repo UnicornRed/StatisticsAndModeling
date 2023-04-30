@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nb_5fdistr_48',['NB_distr',['../classNB__distr.html#a7858e082c2eaede922537efe6376ffd6',1,'NB_distr']]]
+  ['doc_5fnb_68',['Doc_NB',['../classDoc__NB.html#a2040dbcec492ccdd2919461c643ffddb',1,'Doc_NB::Doc_NB(Doc_NB &amp;d)'],['../classDoc__NB.html#a0ea9d34fbaddfb5190c3919adc73a6b1',1,'Doc_NB::Doc_NB(Doc_NB &amp;&amp;d)']]]
 ];

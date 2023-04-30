@@ -1,0 +1,12 @@
+<map id="My_Icon_Bar" name="My_Icon_Bar">
+<area shape="rect" id="node1" title=" " alt="" coords="105,427,211,453"/>
+<area shape="rect" id="node2" href="$classMy__Icon.html" title=" " alt="" coords="120,351,196,377"/>
+<area shape="rect" id="node3" href="$classMy__Button.html" title=" " alt="" coords="5,261,97,288"/>
+<area shape="rect" id="node4" title=" " alt="" coords="9,157,93,184"/>
+<area shape="rect" id="node5" href="$classDoc__NB.html" title=" " alt="" coords="121,261,195,288"/>
+<area shape="rect" id="node6" href="$structChart.html" title=" " alt="" coords="219,261,276,288"/>
+<area shape="rect" id="node7" href="$classMy__Graf.html" title=" " alt="" coords="163,157,241,184"/>
+<area shape="rect" id="node8" href="$classMy__Chart.html" title=" " alt="" coords="217,81,301,108"/>
+<area shape="rect" id="node10" href="$classMy__BarChart.html" title=" " alt="" coords="265,157,371,184"/>
+<area shape="rect" id="node9" title=" " alt="" coords="226,5,293,32"/>
+</map>

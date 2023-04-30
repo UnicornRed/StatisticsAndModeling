@@ -412,11 +412,55 @@ ChiSqHist::~ChiSqHist()
     delete[] th_freq;
 }
 
+void Doc_NB::swap(Doc_NB& d)
+{
+    NB_distr buff_d0 = d0, buff_d1 = d1;
+    d0 = d.d0, d1 = d.d1;
+    d.d0 = buff_d0, d.d1 = buff_d1;
+    NB_distr* buff_d_now = d_now;
+    d_now = d.d_now;
+    d.d_now = buff_d_now;
+    Sample* buff_s = s;
+    s = d.s;
+    d.s = buff_s;
+    ChiSqHist *buff_chisq = chisq;
+    chisq = d.chisq;
+    d.chisq = buff_chisq;
+
+    size_t buff_num_p_value = num_p_value;
+    num_p_value = d.num_p_value;
+    d.num_p_value = buff_num_p_value;
+    double buff_sign_lv = sign_lv;
+    sign_lv = d.sign_lv;
+    d.sign_lv = buff_sign_lv;
+    double* buff_p_value_arr = p_value_arr;
+    p_value_arr = d.p_value_arr;
+    d.p_value_arr = buff_p_value_arr;
+}
+
 Doc_NB::Doc_NB() : d0(), d1(), num_p_value(10000), d_now(&d0), sign_lv(0.05)
 {
     s = new Sample_Bernulli(100, d_now);
     chisq = new ChiSqHist(d_now, s);
     p_value_arr = new double[num_p_value]{};
+}
+
+Doc_NB::Doc_NB(Doc_NB &d) : d0(d.d0), d1(d.d1), num_p_value(d.num_p_value), sign_lv(d.sign_lv), s(d.s), chisq(d.chisq)
+{
+    p_value_arr = new double[num_p_value]{};
+    memcpy(p_value_arr, d.p_value_arr, num_p_value * sizeof(double));
+}
+
+Doc_NB::Doc_NB(Doc_NB &&d)
+{
+    this->swap(d);
+}
+
+Doc_NB& Doc_NB::operator=(Doc_NB d)
+{
+    this->swap(d);
+
+    return *this;
 }
 
 double Doc_NB::get_p_value(size_t i) const

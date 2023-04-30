@@ -1,0 +1,10 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,89,83"/>
+<area shape="rect" id="node2" href="$classMy__Button.html" title=" " alt="" coords="137,56,229,83"/>
+<area shape="rect" id="node3" href="$classMy__Button__Dialog__Close.html" title=" " alt="" coords="277,5,461,32"/>
+<area shape="rect" id="node4" href="$classMy__Button__Dialog__Ok.html" title=" " alt="" coords="286,56,453,83"/>
+<area shape="rect" id="node5" href="$classMy__Icon.html" title=" " alt="" coords="331,107,407,133"/>
+<area shape="rect" id="node6" href="$classMy__Icon__Bar.html" title=" " alt="" coords="524,56,629,83"/>
+<area shape="rect" id="node7" href="$classMy__Icon__P__Value.html" title=" " alt="" coords="509,107,644,133"/>
+<area shape="rect" id="node8" href="$classMy__Icon__Power.html" title=" " alt="" coords="515,157,638,184"/>
+</map>

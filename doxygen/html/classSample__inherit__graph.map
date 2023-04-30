@@ -1,0 +1,5 @@
+<map id="Sample" name="Sample">
+<area shape="rect" id="node1" title="Базовый класс моделирования распределени." alt="" coords="106,5,177,32"/>
+<area shape="rect" id="node2" href="$classSample__Bernulli.html" title=" " alt="" coords="5,80,133,107"/>
+<area shape="rect" id="node3" href="$classSample__Table.html" title=" " alt="" coords="157,80,269,107"/>
+</map>

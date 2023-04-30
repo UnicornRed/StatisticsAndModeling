@@ -3,6 +3,7 @@
 #include "Doc_NB.h"
 #include "Draw_NB.h"
 
+/// @brief 
 class program_NB
 {
 private:
