@@ -7,18 +7,33 @@
 extern unsigned int seed;
 extern std::default_random_engine generator;
 
+/// @class NB_distr
+/// @brief Класс, содержащий параметры отрицательно-биномиального распределения и вычисляющий его вероятности. 
 class NB_distr
 {
 private:
+    /// @brief Параметр вероятности успеха.
     double p;
     double prob_now;
     size_t k, culc_n;
 public:
+    /// @brief Конструктор по параметрам вероятности успеха и количество успехов.
+    /// @param _p Вероятность успеха.
+    /// @param _k Количество успехов.
     NB_distr(double _p = 0.8, size_t _k = 10);
 
+    /// @brief 
+    /// @return 
     inline double get_p() const { return p; }
+
+    /// @brief 
+    /// @return 
     inline size_t get_k() const { return k; }
+
+    /// @brief 
+    /// @return 
     inline double get_prob_now() const { return prob_now; }
+
 
     double next_prob();
 
