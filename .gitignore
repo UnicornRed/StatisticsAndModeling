@@ -6,3 +6,9 @@
 /main.d
 /obj
 /probdist.d
+Doxyfile
+*.png
+*.js
+*.dot
+*.css
+*.html
