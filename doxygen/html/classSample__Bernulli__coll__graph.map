@@ -1,5 +1,5 @@
 <map id="Sample_Bernulli" name="Sample_Bernulli">
-<area shape="rect" id="node1" title=" " alt="" coords="5,171,133,197"/>
-<area shape="rect" id="node2" href="$classSample.html" title="Базовый класс моделирования распределени." alt="" coords="34,95,105,121"/>
-<area shape="rect" id="node3" href="$classNB__distr.html" title="Класс, содержащий параметры отрицательно&#45;биномиального распределения и вычисляющий его вероятности." alt="" coords="31,5,108,32"/>
+<area shape="rect" id="node1" title="Класс моделирования распределения методом Бернулли." alt="" coords="5,171,133,197"/>
+<area shape="rect" id="node2" href="$classSample.html" title="Класс моделирования распределений." alt="" coords="34,95,105,121"/>
+<area shape="rect" id="node3" href="$classNB__distr.html" title="Класс отрицательно&#45;биномиального распределения." alt="" coords="31,5,108,32"/>
 </map>

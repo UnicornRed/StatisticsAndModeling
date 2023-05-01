@@ -24,7 +24,7 @@
    <div id="projectname">StatisticsAndModeling
    &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Modeling of negative-binomial distribution, p-value calculations, power dependence on the sample quantity.</div>
+   <div id="projectbrief">Моделирование отрицательно-биномиального распределения, вычисление p-value и построение зависимости мощности от размера выборки.</div>
   </td>
  </tr>
  </tbody>
@@ -70,38 +70,62 @@ $(function() {
 <div class="title">Класс ChiSqHist</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Класс критерия согласия.  
+ <a href="classChiSqHist.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Doc__NB_8h_source.html">Doc_NB.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:a6363570d569a663f250775cb1e7d2642"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a6363570d569a663f250775cb1e7d2642">ChiSqHist</a> (<a class="el" href="classNB__distr.html">NB_distr</a> *_d, <a class="el" href="classSample.html">Sample</a> *_s)</td></tr>
+<tr class="memdesc:a6363570d569a663f250775cb1e7d2642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор критерия согласия по указателям на распределение и метод моделирования.  <a href="classChiSqHist.html#a6363570d569a663f250775cb1e7d2642">Подробнее...</a><br /></td></tr>
 <tr class="separator:a6363570d569a663f250775cb1e7d2642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53cfd8cf0e98f7a3425b9887c7c38de7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a53cfd8cf0e98f7a3425b9887c7c38de7">ChiSqHist</a> (<a class="el" href="classChiSqHist.html">ChiSqHist</a> &amp;c)</td></tr>
+<tr class="memdesc:a53cfd8cf0e98f7a3425b9887c7c38de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования.  <a href="classChiSqHist.html#a53cfd8cf0e98f7a3425b9887c7c38de7">Подробнее...</a><br /></td></tr>
 <tr class="separator:a53cfd8cf0e98f7a3425b9887c7c38de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a942f345e3d14b15bb7725e8e09039e00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a942f345e3d14b15bb7725e8e09039e00">ChiSqHist</a> (<a class="el" href="classChiSqHist.html">ChiSqHist</a> &amp;&amp;c)</td></tr>
+<tr class="memdesc:a942f345e3d14b15bb7725e8e09039e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор перемещения.  <a href="classChiSqHist.html#a942f345e3d14b15bb7725e8e09039e00">Подробнее...</a><br /></td></tr>
 <tr class="separator:a942f345e3d14b15bb7725e8e09039e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27451e305f771db3b66a9cc43b6d9a9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChiSqHist.html">ChiSqHist</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a27451e305f771db3b66a9cc43b6d9a9e">operator=</a> (<a class="el" href="classChiSqHist.html">ChiSqHist</a> c)</td></tr>
-<tr class="separator:a27451e305f771db3b66a9cc43b6d9a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa634d69da3652c8d2b206ce294abd6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChiSqHist.html">ChiSqHist</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#afa634d69da3652c8d2b206ce294abd6d">operator=</a> (<a class="el" href="classChiSqHist.html">ChiSqHist</a> c)</td></tr>
+<tr class="memdesc:afa634d69da3652c8d2b206ce294abd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания для класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>.  <a href="classChiSqHist.html#afa634d69da3652c8d2b206ce294abd6d">Подробнее...</a><br /></td></tr>
+<tr class="separator:afa634d69da3652c8d2b206ce294abd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23fb39d8942ae85efa9540007e673816"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a23fb39d8942ae85efa9540007e673816">get_p_value</a> () const</td></tr>
+<tr class="memdesc:a23fb39d8942ae85efa9540007e673816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к p-value.  <a href="classChiSqHist.html#a23fb39d8942ae85efa9540007e673816">Подробнее...</a><br /></td></tr>
 <tr class="separator:a23fb39d8942ae85efa9540007e673816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6135a949433ccdd329fa180cff1cadcd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a6135a949433ccdd329fa180cff1cadcd">get_num_freq</a> () const</td></tr>
+<tr class="memdesc:a6135a949433ccdd329fa180cff1cadcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к размеру массива с вероятностями.  <a href="classChiSqHist.html#a6135a949433ccdd329fa180cff1cadcd">Подробнее...</a><br /></td></tr>
 <tr class="separator:a6135a949433ccdd329fa180cff1cadcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348832e990086da6285bceb1f225bed6"><td class="memItemLeft" align="right" valign="top">const size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a348832e990086da6285bceb1f225bed6">get_exp_freq</a> () const</td></tr>
+<tr class="memdesc:a348832e990086da6285bceb1f225bed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к эмперическим частотам.  <a href="classChiSqHist.html#a348832e990086da6285bceb1f225bed6">Подробнее...</a><br /></td></tr>
 <tr class="separator:a348832e990086da6285bceb1f225bed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad200818a1cceb22630fc22a4f2d78ffa"><td class="memItemLeft" align="right" valign="top">const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#ad200818a1cceb22630fc22a4f2d78ffa">get_th_freq</a> () const</td></tr>
+<tr class="memdesc:ad200818a1cceb22630fc22a4f2d78ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к теоретическим вероятностям.  <a href="classChiSqHist.html#ad200818a1cceb22630fc22a4f2d78ffa">Подробнее...</a><br /></td></tr>
 <tr class="separator:ad200818a1cceb22630fc22a4f2d78ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0867fc6f26d478419baa1dbd117c4d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a0867fc6f26d478419baa1dbd117c4d8e">set_data</a> (<a class="el" href="classNB__distr.html">NB_distr</a> *_d, <a class="el" href="classSample.html">Sample</a> *_s)</td></tr>
+<tr class="memdesc:a0867fc6f26d478419baa1dbd117c4d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение распределения и метода моделирования, на основе, которых вычисляется критерий.  <a href="classChiSqHist.html#a0867fc6f26d478419baa1dbd117c4d8e">Подробнее...</a><br /></td></tr>
 <tr class="separator:a0867fc6f26d478419baa1dbd117c4d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c4378593b0ebcff2dde766d752ebc3"><td class="memItemLeft" align="right" valign="top"><a id="a99c4378593b0ebcff2dde766d752ebc3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_th_freq</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a99c4378593b0ebcff2dde766d752ebc3">calc_th_freq</a> ()</td></tr>
+<tr class="memdesc:a99c4378593b0ebcff2dde766d752ebc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Составление таблицы теоретических вероятностей. <br /></td></tr>
 <tr class="separator:a99c4378593b0ebcff2dde766d752ebc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84f3fa977b5a52dca217941ae782902a"><td class="memItemLeft" align="right" valign="top"><a id="a84f3fa977b5a52dca217941ae782902a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_exp_freq</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a84f3fa977b5a52dca217941ae782902a">calc_exp_freq</a> ()</td></tr>
+<tr class="memdesc:a84f3fa977b5a52dca217941ae782902a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Составление таблицы эмперических частот. <br /></td></tr>
 <tr class="separator:a84f3fa977b5a52dca217941ae782902a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a9a96166303fbe7f79bcf9d1308404c"><td class="memItemLeft" align="right" valign="top"><a id="a1a9a96166303fbe7f79bcf9d1308404c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#a1a9a96166303fbe7f79bcf9d1308404c">calc_chi_sq</a> ()</td></tr>
+<tr class="memdesc:a1a9a96166303fbe7f79bcf9d1308404c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление критерия <img class="formulaInl" alt="$ \chi ^2 $" src="form_0.png" width="14" height="14"/> и p-value. <br /></td></tr>
 <tr class="separator:a1a9a96166303fbe7f79bcf9d1308404c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cfb097f5569b9a72749ba9035788b4"><td class="memItemLeft" align="right" valign="top"><a id="af7cfb097f5569b9a72749ba9035788b4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChiSqHist.html#af7cfb097f5569b9a72749ba9035788b4">~ChiSqHist</a> ()</td></tr>
+<tr class="memdesc:af7cfb097f5569b9a72749ba9035788b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. <br /></td></tr>
+<tr class="separator:af7cfb097f5569b9a72749ba9035788b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс критерия согласия. </p>
+<p>Класс, который хранит вычисленные теоретические и эмперические вероятности распределения и выборки, вычисляет критерий <img class="formulaInl" alt="$ \chi ^2 $" src="form_0.png" width="14" height="14"/> и значение p-value. Позволяет сменить распределение и метод моделирования. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a6363570d569a663f250775cb1e7d2642"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6363570d569a663f250775cb1e7d2642">&#9670;&nbsp;</a></span>ChiSqHist() <span class="overload">[1/3]</span></h2>
 
@@ -127,11 +151,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Конструктор критерия согласия по указателям на распределение и метод моделирования. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_d</td><td></td></tr>
-    <tr><td class="paramname">_s</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
+    <tr><td class="paramname">_s</td><td>Указатель на метод моделирования. </td></tr>
   </table>
   </dd>
 </dl>
@@ -153,10 +178,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Конструктор копирования. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,10 +204,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Конструктор перемещения. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -211,8 +238,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+
+<p>Доступ к эмперическим частотам. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на массив эмперичесикх частот. </dd></dl>
 
 </div>
 </div>
@@ -238,8 +266,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+
+<p>Доступ к размеру массива с вероятностями. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Размер массива с вероятностями. </dd></dl>
 
 </div>
 </div>
@@ -265,8 +294,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+
+<p>Доступ к p-value. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение p-value. </dd></dl>
 
 </div>
 </div>
@@ -292,19 +322,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+
+<p>Доступ к теоретическим вероятностям. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на массив теоретических вероятностей. </dd></dl>
 
 </div>
 </div>
-<a id="a27451e305f771db3b66a9cc43b6d9a9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27451e305f771db3b66a9cc43b6d9a9e">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="afa634d69da3652c8d2b206ce294abd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa634d69da3652c8d2b206ce294abd6d">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classChiSqHist.html">ChiSqHist</a> &amp; ChiSqHist::operator= </td>
+          <td class="memname"><a class="el" href="classChiSqHist.html">ChiSqHist</a>&amp; ChiSqHist::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classChiSqHist.html">ChiSqHist</a>&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -312,14 +343,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Оператор присваивания для класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат присваивания, объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </dd></dl>
 
 </div>
 </div>
@@ -348,20 +380,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_chi_sq</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Изменение распределения и метода моделирования, на основе, которых вычисляется критерий. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_d</td><td></td></tr>
-    <tr><td class="paramname">_s</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
+    <tr><td class="paramname">_s</td><td>Указатель на метод моделирования. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
 <li>src/<a class="el" href="Doc__NB_8h_source.html">Doc_NB.h</a></li>
-<li>src/Doc_NB.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -24,7 +24,7 @@
    <div id="projectname">StatisticsAndModeling
    &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Modeling of negative-binomial distribution, p-value calculations, power dependence on the sample quantity.</div>
+   <div id="projectbrief">Моделирование отрицательно-биномиального распределения, вычисление p-value и построение зависимости мощности от размера выборки.</div>
   </td>
  </tr>
  </tbody>
@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Класс, содержащий параметры отрицательно-биномиального распределения и вычисляющий его вероятности.  
+<p>Класс отрицательно-биномиального распределения.  
  <a href="classNB__distr.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Doc__NB_8h_source.html">Doc_NB.h</a>&gt;</code></p>
@@ -82,24 +82,29 @@ $(function() {
 <tr class="memdesc:a7858e082c2eaede922537efe6376ffd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по параметрам распределения: вероятности успеха и количества успехов.  <a href="classNB__distr.html#a7858e082c2eaede922537efe6376ffd6">Подробнее...</a><br /></td></tr>
 <tr class="separator:a7858e082c2eaede922537efe6376ffd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e52c2c3490b26f7b1d9020f3b907cb6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNB__distr.html#a6e52c2c3490b26f7b1d9020f3b907cb6">get_p</a> () const</td></tr>
+<tr class="memdesc:a6e52c2c3490b26f7b1d9020f3b907cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к p.  <a href="classNB__distr.html#a6e52c2c3490b26f7b1d9020f3b907cb6">Подробнее...</a><br /></td></tr>
 <tr class="separator:a6e52c2c3490b26f7b1d9020f3b907cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537540717c6090221ccb8e84712305b0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNB__distr.html#a537540717c6090221ccb8e84712305b0">get_k</a> () const</td></tr>
+<tr class="memdesc:a537540717c6090221ccb8e84712305b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к k.  <a href="classNB__distr.html#a537540717c6090221ccb8e84712305b0">Подробнее...</a><br /></td></tr>
 <tr class="separator:a537540717c6090221ccb8e84712305b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae821bf73b0a63a8eae7db99981bd22d9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNB__distr.html#ae821bf73b0a63a8eae7db99981bd22d9">get_prob_now</a> () const</td></tr>
+<tr class="memdesc:ae821bf73b0a63a8eae7db99981bd22d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к prob_now.  <a href="classNB__distr.html#ae821bf73b0a63a8eae7db99981bd22d9">Подробнее...</a><br /></td></tr>
 <tr class="separator:ae821bf73b0a63a8eae7db99981bd22d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a4b924227a1cd091a816b70e862372"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNB__distr.html#a92a4b924227a1cd091a816b70e862372">next_prob</a> ()</td></tr>
 <tr class="memdesc:a92a4b924227a1cd091a816b70e862372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет следующую вероятность распределения.  <a href="classNB__distr.html#a92a4b924227a1cd091a816b70e862372">Подробнее...</a><br /></td></tr>
 <tr class="separator:a92a4b924227a1cd091a816b70e862372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3358c3175cb097cdf778dbdb54864743"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNB__distr.html#a3358c3175cb097cdf778dbdb54864743">name_of_distr</a> () const</td></tr>
-<tr class="memdesc:a3358c3175cb097cdf778dbdb54864743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция содержащая название распределения.  <a href="classNB__distr.html#a3358c3175cb097cdf778dbdb54864743">Подробнее...</a><br /></td></tr>
-<tr class="separator:a3358c3175cb097cdf778dbdb54864743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2fdc783f663ffcc868c28ed9bd42c5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNB__distr.html#a3b2fdc783f663ffcc868c28ed9bd42c5">name_of_distr</a> () const</td></tr>
+<tr class="memdesc:a3b2fdc783f663ffcc868c28ed9bd42c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция содержащая название распределения.  <a href="classNB__distr.html#a3b2fdc783f663ffcc868c28ed9bd42c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3b2fdc783f663ffcc868c28ed9bd42c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91a6d4830e2a03bc0cd1fdfa797b445"><td class="memItemLeft" align="right" valign="top"><a id="af91a6d4830e2a03bc0cd1fdfa797b445"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNB__distr.html#af91a6d4830e2a03bc0cd1fdfa797b445">reset</a> ()</td></tr>
 <tr class="memdesc:af91a6d4830e2a03bc0cd1fdfa797b445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обнуляет вычисление вероятностей. <br /></td></tr>
 <tr class="separator:af91a6d4830e2a03bc0cd1fdfa797b445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс, содержащий параметры отрицательно-биномиального распределения и вычисляющий его вероятности. </p>
+<div class="textblock"><p>Класс отрицательно-биномиального распределения. </p>
+<p>Класс, содержащий параметры отрицательно-биномиального распределения и вычисляющий его вероятности. <br  />
+ </p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a7858e082c2eaede922537efe6376ffd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7858e082c2eaede922537efe6376ffd6">&#9670;&nbsp;</a></span>NB_distr()</h2>
@@ -161,6 +166,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Доступ к k. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Количество успехов. </dd></dl>
 
 </div>
@@ -187,6 +194,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Доступ к p. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Вероятность успеха. </dd></dl>
 
 </div>
@@ -213,18 +222,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Доступ к prob_now. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Текущую вычисленную вероятность. </dd></dl>
 
 </div>
 </div>
-<a id="a3358c3175cb097cdf778dbdb54864743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3358c3175cb097cdf778dbdb54864743">&#9670;&nbsp;</a></span>name_of_distr()</h2>
+<a id="a3b2fdc783f663ffcc868c28ed9bd42c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2fdc783f663ffcc868c28ed9bd42c5">&#9670;&nbsp;</a></span>name_of_distr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * NB_distr::name_of_distr </td>
+          <td class="memname">const char* NB_distr::name_of_distr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -257,9 +268,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
 <li>src/<a class="el" href="Doc__NB_8h_source.html">Doc_NB.h</a></li>
-<li>src/Doc_NB.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

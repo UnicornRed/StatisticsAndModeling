@@ -37,17 +37,11 @@ enum
     button_w = 80
 };
 
-/// @brief 
-/// @param w 
-/// @param user 
 void setting_callback(Fl_Widget *w, void* user);
 
-/// @brief 
 class My_Graf;
-/// @brief 
 class My_BarChart;
 
-/// @brief 
 struct Chart
 {
     My_Graf* g_p_level;
@@ -56,22 +50,14 @@ struct Chart
     Fl_Output* out_param;
 };
 
-/// @brief 
 class My_Chart : public Fl_Box
 {
 protected:
     void draw();
 public:
-    /// @brief 
-    /// @param x 
-    /// @param y 
-    /// @param w 
-    /// @param h 
-    /// @param s 
     My_Chart(int x, int y, int w, int h, const char* s);
 };
 
-/// @brief 
 class My_Graf : public My_Chart
 {
     const size_t max_part = 20;
@@ -82,34 +68,17 @@ class My_Graf : public My_Chart
 protected:
     void draw();
 public:
-    /// @brief 
-    /// @param x 
-    /// @param y 
-    /// @param w 
-    /// @param h 
-    /// @param s 
     My_Graf(int x, int y, int w, int h, const char* s);
 
-    /// @brief 
-    /// @param _num 
-    /// @param _x_point 
-    /// @param _y_point 
     void set_data(size_t _num, double* _x_point, double* _y_point);
 
-    /// @brief 
     void auto_minmax();
 
-    /// @brief 
-    /// @param _min_x 
-    /// @param _min_y 
-    /// @param _max_x 
-    /// @param _max_y 
     void set_minmax(double _min_x, double _min_y, double _max_x, double _max_y);
 
     ~My_Graf();
 };
 
-/// @brief 
 class My_BarChart : public My_Chart
 {
     const size_t max_part = 20;
@@ -129,7 +98,6 @@ public:
     ~My_BarChart();
 };
 
-/// @brief 
 class My_Button : public Fl_Button
 {
     static void callback_function(Fl_Widget *w, void *user);
@@ -139,7 +107,6 @@ public:
     virtual void on_press(void *user) {}
 };
 
-/// @brief 
 class My_Icon : public My_Button
 {
 protected:
@@ -153,7 +120,6 @@ public:
     virtual void on_press(void *user) {}
 };
 
-/// @brief 
 class My_Icon_P_Value : public My_Icon
 {
 protected:
@@ -165,8 +131,7 @@ public:
 
     virtual void on_press(void *user) override;
 };
-
-/// @brief 
+ 
 class My_Icon_Power : public My_Icon
 {
 protected:
@@ -179,7 +144,6 @@ public:
     virtual void on_press(void *user) override;
 };
 
-/// @brief 
 class My_Icon_Bar : public My_Icon
 {
 protected:
@@ -198,7 +162,6 @@ void exit_callback(Fl_Widget* w, void* user);
 
 void close_dialog_callback(Fl_Widget* w, void* user);
 
-/// @brief 
 class My_Dialog : public Fl_Window
 {
 private:
@@ -221,7 +184,6 @@ public:
     Fl_Radio_Round_Button* rb_h1;
 };
 
-/// @brief 
 class My_Button_Dialog_Ok : public My_Button
 {
 public:
@@ -230,7 +192,6 @@ public:
     virtual void on_press(void *user) override;
 };
 
-/// @brief 
 class My_Button_Dialog_Close : public My_Button
 {
 public:
@@ -239,7 +200,6 @@ public:
     virtual void on_press(void *user) override;
 };
 
-/// @brief 
 class My_Window : public Fl_Window
 {
 private:
@@ -251,7 +211,6 @@ public:
 };
 
 
-/// @brief 
 class Draw_NB
 {
 private:

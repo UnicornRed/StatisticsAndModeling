@@ -1,3 +1,5 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$classDraw__NB.html" title=" " alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node1" href="$classSample.html" title="Класс моделирования распределений." alt="" coords="5,31,76,57"/>
+<area shape="rect" id="node2" href="$classSample__Bernulli.html" title="Класс моделирования распределения методом Бернулли." alt="" coords="124,5,252,32"/>
+<area shape="rect" id="node3" href="$classSample__Table.html" title="Класс моделирования распределения табличным методом." alt="" coords="132,56,244,83"/>
 </map>

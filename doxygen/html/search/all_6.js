@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['program_5fnb_37',['program_NB',['../classprogram__NB.html',1,'']]]
+  ['reset_31',['reset',['../classNB__distr.html#af91a6d4830e2a03bc0cd1fdfa797b445',1,'NB_distr']]]
 ];

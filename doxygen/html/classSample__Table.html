@@ -24,7 +24,7 @@
    <div id="projectname">StatisticsAndModeling
    &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Modeling of negative-binomial distribution, p-value calculations, power dependence on the sample quantity.</div>
+   <div id="projectbrief">Моделирование отрицательно-биномиального распределения, вычисление p-value и построение зависимости мощности от размера выборки.</div>
   </td>
  </tr>
  </tbody>
@@ -70,13 +70,18 @@ $(function() {
 <div class="title">Класс Sample_Table</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Класс моделирования распределения табличным методом.  
+ <a href="classSample__Table.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Doc__NB_8h_source.html">Doc_NB.h</a>&gt;</code></p>
 <div class="dynheader">
 Граф наследования:Sample_Table:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSample__Table__inherit__graph.png" border="0" usemap="#aSample__Table_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSample__Table_inherit__map" id="aSample__Table_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,117,107"/>
-<area shape="rect" href="classSample.html" title="Базовый класс моделирования распределени." alt="" coords="26,5,97,32"/>
+<area shape="rect" title="Класс моделирования распределения табличным методом." alt="" coords="5,80,117,107"/>
+<area shape="rect" href="classSample.html" title="Класс моделирования распределений." alt="" coords="26,5,97,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <div class="dynheader">
@@ -84,63 +89,91 @@ $(function() {
 <div class="dyncontent">
 <div class="center"><img src="classSample__Table__coll__graph.png" border="0" usemap="#aSample__Table_coll__map" alt="Collaboration graph"/></div>
 <map name="aSample__Table_coll__map" id="aSample__Table_coll__map">
-<area shape="rect" title=" " alt="" coords="5,171,117,197"/>
-<area shape="rect" href="classSample.html" title="Базовый класс моделирования распределени." alt="" coords="26,95,97,121"/>
-<area shape="rect" href="classNB__distr.html" title="Класс, содержащий параметры отрицательно&#45;биномиального распределения и вычисляющий его вероятности." alt="" coords="23,5,100,32"/>
+<area shape="rect" title="Класс моделирования распределения табличным методом." alt="" coords="5,171,117,197"/>
+<area shape="rect" href="classSample.html" title="Класс моделирования распределений." alt="" coords="26,95,97,121"/>
+<area shape="rect" href="classNB__distr.html" title="Класс отрицательно&#45;биномиального распределения." alt="" coords="23,5,100,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:a2a9f60cd59f085bb704c2859673fb433"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a2a9f60cd59f085bb704c2859673fb433">Sample_Table</a> (size_t _n, <a class="el" href="classNB__distr.html">NB_distr</a> *_d)</td></tr>
+<tr class="memdesc:a2a9f60cd59f085bb704c2859673fb433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор модирования распределений табличным методом по размеру выборки и распределению.  <a href="classSample__Table.html#a2a9f60cd59f085bb704c2859673fb433">Подробнее...</a><br /></td></tr>
 <tr class="separator:a2a9f60cd59f085bb704c2859673fb433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9340a2cf3e900900f1b8ebdd33350c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a1d9340a2cf3e900900f1b8ebdd33350c">Sample_Table</a> (const <a class="el" href="classSample__Table.html">Sample_Table</a> &amp;s)</td></tr>
+<tr class="memdesc:a1d9340a2cf3e900900f1b8ebdd33350c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования.  <a href="classSample__Table.html#a1d9340a2cf3e900900f1b8ebdd33350c">Подробнее...</a><br /></td></tr>
 <tr class="separator:a1d9340a2cf3e900900f1b8ebdd33350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ecef0ed9232d5ac9e237a4419eca9ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a3ecef0ed9232d5ac9e237a4419eca9ed">Sample_Table</a> (<a class="el" href="classSample__Table.html">Sample_Table</a> &amp;&amp;s)</td></tr>
+<tr class="memdesc:a3ecef0ed9232d5ac9e237a4419eca9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор перемещения.  <a href="classSample__Table.html#a3ecef0ed9232d5ac9e237a4419eca9ed">Подробнее...</a><br /></td></tr>
 <tr class="separator:a3ecef0ed9232d5ac9e237a4419eca9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedae880dce921c1d91baf4c7bec46243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSample__Table.html">Sample_Table</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#aedae880dce921c1d91baf4c7bec46243">operator=</a> (<a class="el" href="classSample__Table.html">Sample_Table</a> s)</td></tr>
-<tr class="separator:aedae880dce921c1d91baf4c7bec46243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a007aad8dbc46a6b7d5ad8fd95f9455dc"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a007aad8dbc46a6b7d5ad8fd95f9455dc">get_name</a> () const override</td></tr>
-<tr class="separator:a007aad8dbc46a6b7d5ad8fd95f9455dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d47a496d5f0925bba0dba134b183df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSample__Table.html">Sample_Table</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a71d47a496d5f0925bba0dba134b183df">operator=</a> (<a class="el" href="classSample__Table.html">Sample_Table</a> s)</td></tr>
+<tr class="memdesc:a71d47a496d5f0925bba0dba134b183df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания для класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>.  <a href="classSample__Table.html#a71d47a496d5f0925bba0dba134b183df">Подробнее...</a><br /></td></tr>
+<tr class="separator:a71d47a496d5f0925bba0dba134b183df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3886e5f65533789cb4250ae6a2d040"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a8f3886e5f65533789cb4250ae6a2d040">get_name</a> () const override</td></tr>
+<tr class="memdesc:a8f3886e5f65533789cb4250ae6a2d040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к названию методу моделирования.  <a href="classSample__Table.html#a8f3886e5f65533789cb4250ae6a2d040">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8f3886e5f65533789cb4250ae6a2d040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae73418d27c844ef0ff9f6ccc78bd5325"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#ae73418d27c844ef0ff9f6ccc78bd5325">change_param</a> (size_t _n)</td></tr>
+<tr class="memdesc:ae73418d27c844ef0ff9f6ccc78bd5325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет размер выборки.  <a href="classSample__Table.html#ae73418d27c844ef0ff9f6ccc78bd5325">Подробнее...</a><br /></td></tr>
 <tr class="separator:ae73418d27c844ef0ff9f6ccc78bd5325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54ed845c04c01144152b05f35bc7bd8c"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a54ed845c04c01144152b05f35bc7bd8c">simulate_one</a> () override</td></tr>
-<tr class="separator:a54ed845c04c01144152b05f35bc7bd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d858317257dc931fced5258e6d14e4"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#a94d858317257dc931fced5258e6d14e4">simulate_one</a> () override</td></tr>
+<tr class="memdesc:a94d858317257dc931fced5258e6d14e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Симулирует один элемент выборки.  <a href="classSample__Table.html#a94d858317257dc931fced5258e6d14e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a94d858317257dc931fced5258e6d14e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d7ff1478f7fd4528e284e0df69f7c4"><td class="memItemLeft" align="right" valign="top"><a id="ac5d7ff1478f7fd4528e284e0df69f7c4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample__Table.html#ac5d7ff1478f7fd4528e284e0df69f7c4">~Sample_Table</a> ()</td></tr>
+<tr class="memdesc:ac5d7ff1478f7fd4528e284e0df69f7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. <br /></td></tr>
+<tr class="separator:ac5d7ff1478f7fd4528e284e0df69f7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSample"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSample')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classSample.html">Sample</a></td></tr>
 <tr class="memitem:aa2df7944375606c60bb5c519226cd43a inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#aa2df7944375606c60bb5c519226cd43a">Sample</a> (size_t _n, <a class="el" href="classNB__distr.html">NB_distr</a> *_d)</td></tr>
+<tr class="memdesc:aa2df7944375606c60bb5c519226cd43a inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор модирования распределений по размеру выборки и распределению.  <a href="classSample.html#aa2df7944375606c60bb5c519226cd43a">Подробнее...</a><br /></td></tr>
 <tr class="separator:aa2df7944375606c60bb5c519226cd43a inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02587fa3602c71d9634e364ae7fe7c1 inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#af02587fa3602c71d9634e364ae7fe7c1">Sample</a> (const <a class="el" href="classSample.html">Sample</a> &amp;s)</td></tr>
+<tr class="memdesc:af02587fa3602c71d9634e364ae7fe7c1 inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования.  <a href="classSample.html#af02587fa3602c71d9634e364ae7fe7c1">Подробнее...</a><br /></td></tr>
 <tr class="separator:af02587fa3602c71d9634e364ae7fe7c1 inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79925ec695fa479a544d9ddf355333fa inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a79925ec695fa479a544d9ddf355333fa">Sample</a> (<a class="el" href="classSample.html">Sample</a> &amp;&amp;s)</td></tr>
+<tr class="memdesc:a79925ec695fa479a544d9ddf355333fa inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор перемещения.  <a href="classSample.html#a79925ec695fa479a544d9ddf355333fa">Подробнее...</a><br /></td></tr>
 <tr class="separator:a79925ec695fa479a544d9ddf355333fa inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858028dd85eab68181b54254d373a859 inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a858028dd85eab68181b54254d373a859">get_n</a> () const</td></tr>
+<tr class="memdesc:a858028dd85eab68181b54254d373a859 inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к размеру выборки.  <a href="classSample.html#a858028dd85eab68181b54254d373a859">Подробнее...</a><br /></td></tr>
 <tr class="separator:a858028dd85eab68181b54254d373a859 inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c572ff607d39bbebd3b5360af5d37f2 inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top"><a id="a3c572ff607d39bbebd3b5360af5d37f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>simulate</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a3c572ff607d39bbebd3b5360af5d37f2">simulate</a> ()</td></tr>
+<tr class="memdesc:a3c572ff607d39bbebd3b5360af5d37f2 inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Симулирует выборку, записывая её во внутренний массив. <br /></td></tr>
 <tr class="separator:a3c572ff607d39bbebd3b5360af5d37f2 inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a993f657ed2d6b3a1802fa4f751048a inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a1a993f657ed2d6b3a1802fa4f751048a">change_param</a> (size_t _n)</td></tr>
+<tr class="memdesc:a1a993f657ed2d6b3a1802fa4f751048a inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет размер выборки.  <a href="classSample.html#a1a993f657ed2d6b3a1802fa4f751048a">Подробнее...</a><br /></td></tr>
 <tr class="separator:a1a993f657ed2d6b3a1802fa4f751048a inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4779ed4deae07a055d10639714e02163 inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a4779ed4deae07a055d10639714e02163">operator[]</a> (int i) const</td></tr>
+<tr class="memdesc:a4779ed4deae07a055d10639714e02163 inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к элементам выборки по индексу.  <a href="classSample.html#a4779ed4deae07a055d10639714e02163">Подробнее...</a><br /></td></tr>
 <tr class="separator:a4779ed4deae07a055d10639714e02163 inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae874296a8f73f6ab4bf97a6264f50c73 inherit pub_methods_classSample"><td class="memItemLeft" align="right" valign="top"><a id="ae874296a8f73f6ab4bf97a6264f50c73"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#ae874296a8f73f6ab4bf97a6264f50c73">~Sample</a> ()=0</td></tr>
+<tr class="memdesc:ae874296a8f73f6ab4bf97a6264f50c73 inherit pub_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор <a class="el" href="classSample.html" title="Класс моделирования распределений.">Sample</a>. <br /></td></tr>
+<tr class="separator:ae874296a8f73f6ab4bf97a6264f50c73 inherit pub_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
 <tr class="inherit_header pro_methods_classSample"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classSample')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="classSample.html">Sample</a></td></tr>
-<tr class="memitem:a33c04e60c356e309f3b4818ddcdd5417 inherit pro_methods_classSample"><td class="memItemLeft" align="right" valign="top"><a id="a33c04e60c356e309f3b4818ddcdd5417"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classSample.html">Sample</a> &amp;s)</td></tr>
+<tr class="memitem:a33c04e60c356e309f3b4818ddcdd5417 inherit pro_methods_classSample"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a33c04e60c356e309f3b4818ddcdd5417">swap</a> (<a class="el" href="classSample.html">Sample</a> &amp;s)</td></tr>
+<tr class="memdesc:a33c04e60c356e309f3b4818ddcdd5417 inherit pro_methods_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Осуществляет обмен полями между объектом класса и переданным s.  <a href="classSample.html#a33c04e60c356e309f3b4818ddcdd5417">Подробнее...</a><br /></td></tr>
 <tr class="separator:a33c04e60c356e309f3b4818ddcdd5417 inherit pro_methods_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classSample"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSample')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="classSample.html">Sample</a></td></tr>
 <tr class="memitem:ace9b98b41760aa51c65c8a4e1c455d6c inherit pro_attribs_classSample"><td class="memItemLeft" align="right" valign="top"><a id="ace9b98b41760aa51c65c8a4e1c455d6c"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n</b></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#ace9b98b41760aa51c65c8a4e1c455d6c">n</a></td></tr>
+<tr class="memdesc:ace9b98b41760aa51c65c8a4e1c455d6c inherit pro_attribs_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер выборки. <br /></td></tr>
 <tr class="separator:ace9b98b41760aa51c65c8a4e1c455d6c inherit pro_attribs_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94cd7730a3027d5850bb81735a76cb8d inherit pro_attribs_classSample"><td class="memItemLeft" align="right" valign="top"><a id="a94cd7730a3027d5850bb81735a76cb8d"></a>
-<a class="el" href="classNB__distr.html">NB_distr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>d</b></td></tr>
+<a class="el" href="classNB__distr.html">NB_distr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a94cd7730a3027d5850bb81735a76cb8d">d</a></td></tr>
+<tr class="memdesc:a94cd7730a3027d5850bb81735a76cb8d inherit pro_attribs_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на класс распределения. <br /></td></tr>
 <tr class="separator:a94cd7730a3027d5850bb81735a76cb8d inherit pro_attribs_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d64f55526c7137b4aca53a6c5368eef inherit pro_attribs_classSample"><td class="memItemLeft" align="right" valign="top"><a id="a9d64f55526c7137b4aca53a6c5368eef"></a>
-size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
+size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSample.html#a9d64f55526c7137b4aca53a6c5368eef">sam</a></td></tr>
+<tr class="memdesc:a9d64f55526c7137b4aca53a6c5368eef inherit pro_attribs_classSample"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив с выборкой. <br /></td></tr>
 <tr class="separator:a9d64f55526c7137b4aca53a6c5368eef inherit pro_attribs_classSample"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс моделирования распределения табличным методом. </p>
+<p>Дочерний к <a class="el" href="classSample.html" title="Класс моделирования распределений.">Sample</a> класс для моделирования распределений табличным методом, содержащий размер выборки, указатель на распределение, массив выборки и массив суммированных вероятностей. Позволяет генерировать выборку, изменять её размер и получать её параметры и название метода. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a2a9f60cd59f085bb704c2859673fb433"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a9f60cd59f085bb704c2859673fb433">&#9670;&nbsp;</a></span>Sample_Table() <span class="overload">[1/3]</span></h2>
 
@@ -166,11 +199,12 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Конструктор модирования распределений табличным методом по размеру выборки и распределению. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_n</td><td></td></tr>
-    <tr><td class="paramname">_d</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">_n</td><td>Размер выборки. </td></tr>
+    <tr><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
   </table>
   </dd>
 </dl>
@@ -192,10 +226,11 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Конструктор копирования. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,10 +252,11 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Конструктор перемещения. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -243,18 +279,19 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Изменяет размер выборки. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_n</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">_n</td><td>Размер выборки. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a007aad8dbc46a6b7d5ad8fd95f9455dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a007aad8dbc46a6b7d5ad8fd95f9455dc">&#9670;&nbsp;</a></span>get_name()</h2>
+<a id="a8f3886e5f65533789cb4250ae6a2d040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3886e5f65533789cb4250ae6a2d040">&#9670;&nbsp;</a></span>get_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +300,7 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * Sample_Table::get_name </td>
+          <td class="memname">virtual const char* Sample_Table::get_name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -275,21 +312,22 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+
+<p>Доступ к названию методу моделирования. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Константную строку "Table Method". </dd></dl>
 
 <p>Замещает <a class="el" href="classSample.html#ae1541d46732aa8de4531f1bc2321395d">Sample</a>.</p>
 
 </div>
 </div>
-<a id="aedae880dce921c1d91baf4c7bec46243"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedae880dce921c1d91baf4c7bec46243">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a71d47a496d5f0925bba0dba134b183df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d47a496d5f0925bba0dba134b183df">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSample__Table.html">Sample_Table</a> &amp; Sample_Table::operator= </td>
+          <td class="memname"><a class="el" href="classSample__Table.html">Sample_Table</a>&amp; Sample_Table::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classSample__Table.html">Sample_Table</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -297,19 +335,20 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Оператор присваивания для класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td></td></tr>
+    <tr><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат присваивания, объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a54ed845c04c01144152b05f35bc7bd8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54ed845c04c01144152b05f35bc7bd8c">&#9670;&nbsp;</a></span>simulate_one()</h2>
+<a id="a94d858317257dc931fced5258e6d14e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94d858317257dc931fced5258e6d14e4">&#9670;&nbsp;</a></span>simulate_one()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +357,7 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Sample_Table::simulate_one </td>
+          <td class="memname">virtual size_t Sample_Table::simulate_one </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -330,16 +369,16 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sam</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Возвращает</dt><dd><br  />
- </dd></dl>
+
+<p>Симулирует один элемент выборки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение элемента выборки. </dd></dl>
 
 <p>Замещает <a class="el" href="classSample.html#ac06312f85b9d927ce8cb1da3b55a250c">Sample</a>.</p>
 
 </div>
 </div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
 <li>src/<a class="el" href="Doc__NB_8h_source.html">Doc_NB.h</a></li>
-<li>src/Doc_NB.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
