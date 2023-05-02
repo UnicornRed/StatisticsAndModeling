@@ -1,3 +1,28 @@
+/// @mainpage NB distribution
+/// Основная страница набора классов по моделированию отрицательно-биномиального распределения.
+/// Их возможности позволяют
+/// 1. Моделировать выборки случайных величин, распределённых по отрицательно биномиальному закону, методами Бернулли и табличным; 
+/// 2. Менять их параметры (такие как вероятность успеха, количество успехов, размер выборки);
+/// 3. Получать теоретические вероятности и эмперические частоты;
+/// 4. Считать критерий \f$ \chi ^2 \f$ и p-value;
+/// 5. Моделировать выборку p-value и менять для этого метод моделирования, размер выборки, гипотезу, на основе которой моделируется выборка.
+/// 
+/// @ref NB_distr - класс распределения, хранящий параметры отрицательно-биномиального распределения.
+///
+/// @ref Sample - базовый класс для моделирования выборок.
+///
+/// @ref Sample_Table - класс моделирования выборок табличным методом.
+/// 
+/// @ref Sample_Bernulli - класс моделирования выборок методом Бернулли.
+///
+/// @ref ChiSqHist - класс критерия согласия \f$ \chi ^2 \f$.
+///
+/// @ref Doc_NB - класс моделирования выборок p-value.
+///
+/// Пример использования классов:
+/// @include main.cpp
+/// @example main.cpp
+
 /// @file
 /// @brief Моделирование отрицательно-биномиального распределения.
 /// @details  файл содержит классы, используемые для моделирования выбоки отрицательно-биномиального распределения.
@@ -30,8 +55,8 @@ private:
     size_t culc_n;
 public:
     /// @brief Конструктор по параметрам распределения: вероятности успеха и количества успехов.
-    /// @param _p Вероятность успеха.
-    /// @param _k Количество успехов.
+    /// @param[in] _p Вероятность успеха.
+    /// @param[in] _k Количество успехов.
     NB_distr(double _p = 0.8, size_t _k = 10);
 
     /// @brief Доступ к p.
@@ -76,16 +101,16 @@ protected:
     void swap(Sample& s);
 public:
     /// @brief Конструктор модирования распределений по размеру выборки и распределению.
-    /// @param _n Размер выборки.
-    /// @param _d Указатель на распределение.
+    /// @param[in] _n Размер выборки.
+    /// @param[in] _d Указатель на распределение.
     Sample(size_t _n, NB_distr* _d);
 
     /// @brief Конструктор копирования.
-    /// @param s Объект класса Sample.
+    /// @param[in] s Объект класса Sample.
     Sample(const Sample& s);
 
     /// @brief Конструктор перемещения.
-    /// @param s Объект класса Sample.
+    /// @param[in] s Объект класса Sample.
     Sample(Sample&& s);
 
     /// @brief Доступ к размеру выборки.
@@ -104,11 +129,11 @@ public:
     virtual size_t simulate_one() = 0;
 
     /// @brief Изменяет размер выборки.
-    /// @param _n Размер выборки.
+    /// @param[in] _n Размер выборки.
     void change_param(size_t _n);
 
     /// @brief Доступ к элементам выборки по индексу.
-    /// @param i Индекс элемента выборки.
+    /// @param[in] i Индекс элемента выборки.
     /// @return Значение элемента выборки. 
     size_t operator[] (int i) const;
 
@@ -141,20 +166,20 @@ private:
     void swap(Sample_Table& s);
 public:
     /// @brief Конструктор модирования распределений табличным методом по размеру выборки и распределению.
-    /// @param _n Размер выборки.
-    /// @param _d Указатель на распределение.
+    /// @param[in] _n Размер выборки.
+    /// @param[in] _d Указатель на распределение.
     Sample_Table(size_t _n, NB_distr* _d);
 
     /// @brief Конструктор копирования.
-    /// @param s Объект класса Sample_Table.
+    /// @param[in] s Объект класса Sample_Table.
     Sample_Table(const Sample_Table& s);
 
     /// @brief Конструктор перемещения.
-    /// @param s Объект класса Sample_Table.
+    /// @param[in] s Объект класса Sample_Table.
     Sample_Table(Sample_Table&& s);
 
     /// @brief Оператор присваивания для класса Sample_Table.
-    /// @param s Объект класса Sample_Table.
+    /// @param[in] s Объект класса Sample_Table.
     /// @return Результат присваивания, объект класса Sample_Table.
     Sample_Table& operator=(Sample_Table s);
 
@@ -163,7 +188,7 @@ public:
     virtual const char* get_name() const override;
 
     /// @brief Изменяет размер выборки.
-    /// @param _n Размер выборки.
+    /// @param[in] _n Размер выборки.
     void change_param(size_t _n);
 
     /// @brief Симулирует один элемент выборки.
@@ -182,20 +207,20 @@ class Sample_Bernulli : public Sample
 {
 public:
     /// @brief Конструктор модирования распределений методом Бернулли по размеру выборки и распределению.
-    /// @param _n Размер выборки.
-    /// @param _d Указатель на распределение.
+    /// @param[in] _n Размер выборки.
+    /// @param[in] _d Указатель на распределение.
     Sample_Bernulli(size_t _n, NB_distr* _d);
 
     /// @brief Конструктор копирования.
-    /// @param s Объект класса Sample_Bernulli.
+    /// @param[in] s Объект класса Sample_Bernulli.
     Sample_Bernulli(const Sample_Bernulli& s);
 
     /// @brief Конструктор перемещения.
-    /// @param s Объект класса Sample_Bernulli.
+    /// @param[in] s Объект класса Sample_Bernulli.
     Sample_Bernulli(Sample_Bernulli&& s);
 
     /// @brief Оператор присваивания для класса Sample_Bernulli.
-    /// @param s Объект класса Sample_Bernulli.
+    /// @param[in] s Объект класса Sample_Bernulli.
     /// @return Результат присваивания, объект класса Sample_Bernulli.
     Sample_Bernulli& operator=(Sample_Bernulli s);
 
@@ -233,36 +258,36 @@ private:
     double* th_freq;
 
     /// @brief Объединяет состояния, чтобы критерий был применим.
-    /// @param exp_freq_merge Массив эмперических частот для объединения.
-    /// @param th_freq_merge Массив теоретических вероятностей для объединения.
+    /// @param[in, out] exp_freq_merge Массив эмперических частот для объединения.
+    /// @param[in, out] th_freq_merge Массив теоретических вероятностей для объединения.
     /// @return Размер объединённых массивов.
     size_t merge(size_t* exp_freq_merge, double* th_freq_merge);
     /// @brief Вычисляет значение критерия \f$ \chi ^2 \f$.
-    /// @param new_num Размер объединённых массивов.
-    /// @param exp_freq_merge Объединённый массив эмперических частот.
-    /// @param th_freq_merge Объединённый массив теоретических вероятностей.
+    /// @param[in] new_num Размер объединённых массивов.
+    /// @param[in] exp_freq_merge Объединённый массив эмперических частот.
+    /// @param[in] th_freq_merge Объединённый массив теоретических вероятностей.
     /// @return Значение критерия для данной выборки.
     double chi_square(size_t new_num, size_t* exp_freq_merge, double* th_freq_merge);
 
     /// @brief Осуществляет обмен полями между объектом класса и переданным c.
-    /// @param c Объект класса ChiSqHist.
+    /// @param[in, out] c Объект класса ChiSqHist.
     void swap(ChiSqHist& c);
 public:
     /// @brief Конструктор критерия согласия по указателям на распределение и метод моделирования.
-    /// @param _d Указатель на распределение.
-    /// @param _s Указатель на метод моделирования.
+    /// @param[in] _d Указатель на распределение.
+    /// @param[in] _s Указатель на метод моделирования.
     ChiSqHist(NB_distr* _d, Sample* _s);
 
     /// @brief Конструктор копирования.
-    /// @param c Объект класса ChiSqHist.
+    /// @param[in] c Объект класса ChiSqHist.
     ChiSqHist(ChiSqHist& c);
 
     /// @brief Конструктор перемещения.
-    /// @param c Объект класса ChiSqHist.
+    /// @param[in] c Объект класса ChiSqHist.
     ChiSqHist(ChiSqHist&& c);
 
     /// @brief Оператор присваивания для класса ChiSqHist.
-    /// @param c Объект класса ChiSqHist.
+    /// @param[in] c Объект класса ChiSqHist.
     /// @return Результат присваивания, объект класса ChiSqHist.
     ChiSqHist& operator=(ChiSqHist c);
 
@@ -282,8 +307,8 @@ public:
     inline const double* get_th_freq() const { return th_freq; }
 
     /// @brief Изменение распределения и метода моделирования, на основе, которых вычисляется критерий.
-    /// @param _d Указатель на распределение.
-    /// @param _s Указатель на метод моделирования.
+    /// @param[in] _d Указатель на распределение.
+    /// @param[in] _s Указатель на метод моделирования.
     void set_data(NB_distr* _d, Sample* _s);
 
     /// @brief Составление таблицы теоретических вероятностей.
@@ -324,22 +349,22 @@ private:
     double* p_value_arr;
 
     /// @brief Осуществляет обмен полями между объектом класса и переданным d.
-    /// @param c Объект класса Doc_NB.
+    /// @param[in, out] c Объект класса Doc_NB.
     void swap(Doc_NB& d);
 public:
     /// @brief Конструктор класса моделирования и гипотез.
     Doc_NB();
 
     /// @brief Конструктор копирования.
-    /// @param d Объект класса Doc_NB.
+    /// @param[in] d Объект класса Doc_NB.
     Doc_NB(Doc_NB &d);
 
     /// @brief Конструктор перемещения.
-    /// @param d Объект класса Doc_NB.
+    /// @param[in] d Объект класса Doc_NB.
     Doc_NB(Doc_NB &&d);
 
     /// @brief Оператор присваивания для класса Doc_NB.
-    /// @param d Объект класса Doc_NB.
+    /// @param[in] d Объект класса Doc_NB.
     /// @return Результат присваивания, объект класса Doc_NB.
     Doc_NB& operator=(Doc_NB d);
 
@@ -366,16 +391,16 @@ public:
     void make_p_value();
 
     /// @brief Доступ к элементу выборки p-value.
-    /// @param i Индекс элемента выборки p-value.
+    /// @param[in] i Индекс элемента выборки p-value.
     /// @return Значение элемента выборки p-value.
     double get_p_value(size_t i) const;
 
     /// @brief Позволяет изменить параметры гипотез, размер выборки p-value, размер выборки и уровень значимости.
-    /// @param _d0 Нулевая гипотеза.
-    /// @param _d1 Альтернативная гипотеза.
-    /// @param _num_p_value Размер выборки p-value.
-    /// @param _n Размер выборки.
-    /// @param _sign_lv Уровень значимости.
+    /// @param[in] _d0 Нулевая гипотеза.
+    /// @param[in] _d1 Альтернативная гипотеза.
+    /// @param[in] _num_p_value Размер выборки p-value.
+    /// @param[in] _n Размер выборки.
+    /// @param[in] _sign_lv Уровень значимости.
     void change_param(NB_distr _d0, NB_distr _d1, size_t _num_p_value, size_t _n, double _sign_lv);
 
     /// @brief Установка в качестве метода моделирования табличного метода.

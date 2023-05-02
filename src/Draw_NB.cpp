@@ -547,9 +547,9 @@ void My_Button_Dialog_Ok::on_press(void *user)
         return;
     }
 
-    if (ns <= 0 || ns > 1000)
+    if (ns < 50 || ns > 1000)
     {
-        fl_alert("Param. number of sample must be greater than 0 and less 1000!\nThe default value is set: 100");
+        fl_alert("Param. number of sample must be greater than 49 and less 1000!\nThe default value is set: 100");
 
         ((My_Dialog*)user)->ii_ns->value("100");
 

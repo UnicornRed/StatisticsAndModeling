@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">StatisticsAndModeling
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.9.23</span>
    </div>
    <div id="projectbrief">Моделирование отрицательно-биномиального распределения, вычисление p-value и построение зависимости мощности от размера выборки.</div>
   </td>
@@ -173,6 +173,8 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс моделирования распределения табличным методом. </p>
 <p>Дочерний к <a class="el" href="classSample.html" title="Класс моделирования распределений.">Sample</a> класс для моделирования распределений табличным методом, содержащий размер выборки, указатель на распределение, массив выборки и массив суммированных вероятностей. Позволяет генерировать выборку, изменять её размер и получать её параметры и название метода. </p>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#_a7">main.cpp</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a2a9f60cd59f085bb704c2859673fb433"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a9f60cd59f085bb704c2859673fb433">&#9670;&nbsp;</a></span>Sample_Table() <span class="overload">[1/3]</span></h2>
@@ -203,8 +205,8 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>Конструктор модирования распределений табличным методом по размеру выборки и распределению. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_n</td><td>Размер выборки. </td></tr>
-    <tr><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_n</td><td>Размер выборки. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
   </table>
   </dd>
 </dl>
@@ -230,7 +232,7 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>Конструктор копирования. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -256,7 +258,7 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>Конструктор перемещения. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -283,7 +285,7 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>Изменяет размер выборки. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_n</td><td>Размер выборки. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_n</td><td>Размер выборки. </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,6 +319,8 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <dl class="section return"><dt>Возвращает</dt><dd>Константную строку "Table Method". </dd></dl>
 
 <p>Замещает <a class="el" href="classSample.html#ae1541d46732aa8de4531f1bc2321395d">Sample</a>.</p>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a8">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -339,7 +343,7 @@ size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>Оператор присваивания для класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Объект класса <a class="el" href="classSample__Table.html" title="Класс моделирования распределения табличным методом.">Sample_Table</a>. </td></tr>
   </table>
   </dd>
 </dl>

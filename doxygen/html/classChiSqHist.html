@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">StatisticsAndModeling
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.9.23</span>
    </div>
    <div id="projectbrief">Моделирование отрицательно-биномиального распределения, вычисление p-value и построение зависимости мощности от размера выборки.</div>
   </td>
@@ -125,6 +125,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс критерия согласия. </p>
 <p>Класс, который хранит вычисленные теоретические и эмперические вероятности распределения и выборки, вычисляет критерий <img class="formulaInl" alt="$ \chi ^2 $" src="form_0.png" width="14" height="14"/> и значение p-value. Позволяет сменить распределение и метод моделирования. </p>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#_a14">main.cpp</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a6363570d569a663f250775cb1e7d2642"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6363570d569a663f250775cb1e7d2642">&#9670;&nbsp;</a></span>ChiSqHist() <span class="overload">[1/3]</span></h2>
@@ -155,8 +157,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Конструктор критерия согласия по указателям на распределение и метод моделирования. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
-    <tr><td class="paramname">_s</td><td>Указатель на метод моделирования. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_s</td><td>Указатель на метод моделирования. </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,7 +184,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Конструктор копирования. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -208,7 +210,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Конструктор перемещения. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -241,6 +243,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Доступ к эмперическим частотам. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Указатель на массив эмперичесикх частот. </dd></dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a21">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -269,6 +273,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Доступ к размеру массива с вероятностями. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Размер массива с вероятностями. </dd></dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a18">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -297,6 +303,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Доступ к p-value. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Значение p-value. </dd></dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a16">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -325,6 +333,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Доступ к теоретическим вероятностям. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Указатель на массив теоретических вероятностей. </dd></dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a19">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -347,7 +357,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Оператор присваивания для класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>Объект класса <a class="el" href="classChiSqHist.html" title="Класс критерия согласия.">ChiSqHist</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,8 +394,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Изменение распределения и метода моделирования, на основе, которых вычисляется критерий. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
-    <tr><td class="paramname">_s</td><td>Указатель на метод моделирования. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_d</td><td>Указатель на распределение. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_s</td><td>Указатель на метод моделирования. </td></tr>
   </table>
   </dd>
 </dl>

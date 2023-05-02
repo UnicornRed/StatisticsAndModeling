@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nb_5fdistr_51',['NB_distr',['../classNB__distr.html',1,'']]]
+  ['nb_5fdistr_52',['NB_distr',['../classNB__distr.html',1,'']]]
 ];

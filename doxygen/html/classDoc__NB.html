@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">StatisticsAndModeling
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.9.23</span>
    </div>
    <div id="projectbrief">Моделирование отрицательно-биномиального распределения, вычисление p-value и построение зависимости мощности от размера выборки.</div>
   </td>
@@ -143,6 +143,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс моделирования и гипотез. </p>
 <p>Класс, который хранит нулевую и альтернативную гипотезы, метод моделирования, объект критерия <img class="formulaInl" alt="$ \chi ^2 $" src="form_0.png" width="14" height="14"/>, выборку p_value, уровень значимости. Позволяет менять параметры распеределений, методы моделирования, критерий и размер выборки p-value. Моделирует выборку p-value. </p>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#_a9">main.cpp</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a2040dbcec492ccdd2919461c643ffddb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2040dbcec492ccdd2919461c643ffddb">&#9670;&nbsp;</a></span>Doc_NB() <span class="overload">[1/2]</span></h2>
@@ -163,7 +165,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Конструктор копирования. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>Объект класса <a class="el" href="classDoc__NB.html" title="Класс моделирования и гипотез.">Doc_NB</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>Объект класса <a class="el" href="classDoc__NB.html" title="Класс моделирования и гипотез.">Doc_NB</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -189,7 +191,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Конструктор перемещения. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>Объект класса <a class="el" href="classDoc__NB.html" title="Класс моделирования и гипотез.">Doc_NB</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>Объект класса <a class="el" href="classDoc__NB.html" title="Класс моделирования и гипотез.">Doc_NB</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -244,13 +246,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Позволяет изменить параметры гипотез, размер выборки p-value, размер выборки и уровень значимости. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_d0</td><td>Нулевая гипотеза. </td></tr>
-    <tr><td class="paramname">_d1</td><td>Альтернативная гипотеза. </td></tr>
-    <tr><td class="paramname">_num_p_value</td><td>Размер выборки p-value. </td></tr>
-    <tr><td class="paramname">_n</td><td>Размер выборки. </td></tr>
-    <tr><td class="paramname">_sign_lv</td><td>Уровень значимости. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_d0</td><td>Нулевая гипотеза. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_d1</td><td>Альтернативная гипотеза. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_num_p_value</td><td>Размер выборки p-value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_n</td><td>Размер выборки. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_sign_lv</td><td>Уровень значимости. </td></tr>
   </table>
   </dd>
+</dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a10">main.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -280,6 +284,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Доступ к критерию согласию <img class="formulaInl" alt="$ \chi ^2 $" src="form_0.png" width="14" height="14"/>. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Указатель на критерий согласия <img class="formulaInl" alt="$ \chi ^2 $" src="form_0.png" width="14" height="14"/>. </dd></dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a15">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -364,6 +370,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Доступ к размеру выборки p-value. </p>
 <dl class="section return"><dt>Возвращает</dt><dd>Размер выборки p-value. </dd></dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a22">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -386,11 +394,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Доступ к элементу выборки p-value. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>Индекс элемента выборки p-value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>Индекс элемента выборки p-value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>Значение элемента выборки p-value. </dd></dl>
+<dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="main_8cpp-example.html#a23">main.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -469,7 +479,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Оператор присваивания для класса <a class="el" href="classDoc__NB.html" title="Класс моделирования и гипотез.">Doc_NB</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>Объект класса <a class="el" href="classDoc__NB.html" title="Класс моделирования и гипотез.">Doc_NB</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>Объект класса <a class="el" href="classDoc__NB.html" title="Класс моделирования и гипотез.">Doc_NB</a>. </td></tr>
   </table>
   </dd>
 </dl>
