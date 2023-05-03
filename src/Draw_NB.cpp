@@ -66,7 +66,7 @@ void My_Graf::draw()
     if (min_x == min_y && max_x == max_y)
         fl_line(x ,y + h, x + w, y);
         
-    fl_color(20);
+    fl_color(255, 0, 0);
 
     if (num > 0)
         fl_line(pre_x, pre_y, pre_x, pre_y);
@@ -353,7 +353,7 @@ void My_Icon_Power::on_press(void *user)
     c.g_power->hide();
     change_output();
 
-    size_t num_n = 20, len_n = 10, start_n = 10, back_n = data->get_Sample()->get_n();
+    size_t num_n = 20, len_n = 5, start_n = 50, back_n = data->get_Sample()->get_n();
     double *power_arr = new double[num_n]{};
     double x_point[num_n], max_y = 0, min_y = 1;
 

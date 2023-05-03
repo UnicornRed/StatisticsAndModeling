@@ -6,9 +6,6 @@
 /main.d
 /obj
 /probdist.d
-Doxyfile
-*.png
-*.js
-*.dot
-*.css
-*.html
+/doxygen
+/Statistic_Oleynik
+/Statistic_Oleynik.zip
